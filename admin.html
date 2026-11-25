@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>รายการสั่งซื้อ | LANIA</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line-soft);
+    }
+    #ordersTable {
+      width: 100%;
+      min-width: 52rem;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    #ordersTable th,
+    #ordersTable td {
+      padding: var(--space-2);
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line-soft);
+    }
+    #ordersTable th {
+      font-weight: 400;
+      color: var(--ink-soft);
+      background: var(--cream);
+      white-space: nowrap;
+    }
+    #ordersTable tbody tr:last-child td {
+      border-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">LANIA</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h1>รายการสั่งซื้อ</h1>
+          <span class="rule"></span>
+        </div>
+
+        <div class="table-wrap">
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th>วันเวลา</th>
+                <th>ชื่อลูกค้า</th>
+                <th>เบอร์โทร/Line</th>
+                <th>รายการสินค้า</th>
+                <th>จำนวนเงินรวม</th>
+                <th>หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
